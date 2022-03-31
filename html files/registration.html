@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./../css files/registration.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html"
+        ><img
+          src="https://cdn11.bigcommerce.com/s-kb4uz7s0bb/images/stencil/75x75/logo-bc_1595810517__94076.original.png"
+          alt="WTRFLogo"
+      /></a>
+      <div>
+        <a href="../index.html">About</a>
+        <a href="special-page.html">Resources</a>
+        <a href="registration.html" class="active">Upcoming Events</a>
+        <a href="contact.html">Get in touch</a>
+      </div>
+    </nav>
+
+    <div class="meta-form">
+      <form action="Confirmation.html" class="form-container">
+        <div class="zero-line-container">
+          <p>
+            Please fill out the form below to receive information about upcoming
+            events.
+          </p>
+        </div>
+        <div class="first-line-container">
+          <div>
+            <label for="fname">Name:</label>
+            <input
+              type="text"
+              id="fname"
+              name="first-name"
+              placeholder="Your first name"
+              required
+            />
+          </div>
+          <div>
+            <label for="email">Email address:</label>
+
+            <input
+              type="text"
+              id="email"
+              name="email-address"
+              placeholder="example@gmail.com"
+              required
+            /><br /><br />
+          </div>
+        </div>
+
+        <div class="second-line-container">
+          <div>
+            <p>How often would you like to hear from us?</p>
+
+            <input
+              type="radio"
+              id="aoap"
+              name="Cadence"
+              value="As often as possible"
+            />
+            <label for="aoap">As often as possible</label><br />
+            <input
+              type="radio"
+              id="weekly"
+              name="Cadence"
+              value="Weekly"
+              required
+            />
+            <label for="weekly">Weekly</label><br />
+            <input type="radio" id="monthly" name="Cadence" value="Monthly" />
+            <label for="monthly">Monthly</label><br /><br />
+          </div>
+
+          <div>
+            <p>What topics are you interested in?</p>
+
+            <input
+              type="checkbox"
+              id="dance"
+              name="topics"
+              value="Dance events"
+            />
+            <label for="dance">Dance events</label><br />
+
+            <input
+              type="checkbox"
+              id="meditation"
+              name="topics"
+              value="Free meditations"
+            />
+            <label for="meditation">Free meditations</label><br />
+
+            <input
+              type="checkbox"
+              id="speaker"
+              name="topics"
+              value="Inspiring speakers"
+            />
+            <label for="speaker">Inspiring speakers</label><br />
+
+            <input
+              type="checkbox"
+              id="nature"
+              name="topics"
+              value="Nature walks"
+            />
+            <label for="nature">Nature walks</label><br /><br />
+          </div>
+
+          <div>
+            <label for="fav_color">What is your favorite color?</label><br />
+
+            <select name="Favorite Color" id="fav_color" required>
+              <option value=""></option>
+              <option value="Black">Black</option>
+              <option value="Rosegold">Rosegold</option>
+              <option value="Rose">Rose</option>
+              <option value="Gold">Gold</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="third-line-container">
+          <div class="third-line-container-a">
+            <h5>Terms & Conditions</h5>
+          </div>
+
+          <div class="third-line-container-b">
+            <ul>
+              <li>
+                #1 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptatibus accusamus quo exercitationem, aliquid quas fuga
+                perferendis corrupti doloremque qui, esse amet, nihil quasi
+                explicabo maiores voluptatum numquam voluptas ea placeat!
+                <ul>
+                  <li>
+                    aaa Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Facere molestias deleniti officia facilis recusandae ut!
+                    Aspernatur, modi quis. Maiores consequatur cupiditate rerum
+                    explicabo sint perspiciatis vitae, temporibus dolorum quasi
+                    ut!
+                  </li>
+                  <li>
+                    bbb onsectetur adipisicing elit. Facere molestias deleniti
+                    officia facilis recusandae ut! Aspernatur, modi quis.
+                    Maiores consequatur cupiditate rerum explicabo sint
+                    perspiciatis vitae, temporibus dolorum quasi ut!
+                  </li>
+                </ul>
+              </li>
+              <li>
+                #2 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Ipsam est maiores dignissimos? Fugiat repellendus sed alias
+                laborum eum, quia adipisci voluptates voluptatibus porro odio
+                perspiciatis error delectus temporibus esse magnam!
+                <ul>
+                  <li>
+                    aaa onsectetur adipisicing elit. ias deleniti officia
+                    facilis recusandae ut! Aspernatur, modi quis. Maiores
+                    consequatur cupiditate rerum explicabo sint perspiciatis
+                    vitae, temporibus dolorum quasi ut!
+                  </li>
+                  <li>
+                    bbb Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit. Officia quibusdam omnis esse sequi cumque architecto,
+                    quia, porro quod, dolore ad minus. Reiciendis et voluptate,
+                    non ex temporibus assumenda hic explicabo.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="fourth-line-container">
+          <input type="submit" value="Sign me up!" />
+        </div>
+      </form>
+    </div>
+
+    <footer>
+      <p>Ⓒ2022 WTRF LLC. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

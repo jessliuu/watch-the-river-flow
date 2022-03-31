@@ -1,0 +1,98 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+  margin: 0px;
+  color: #627264;
+}
+
+nav {
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  align-items: baseline;
+  gap: 10px;
+  font-weight: 600;
+}
+
+nav :nth-child(2) {
+  align-self: center;
+  display: flex;
+  gap: 30px;
+}
+
+.active {
+  color: #003b6f;
+}
+
+a:hover {
+  opacity: 70%;
+}
+.about-container {
+  width: 100%;
+  background-image: url(../images/pexels-baskin-creative-studios-1766838.jpg);
+  opacity: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 610px;
+  display: flex;
+  align-items: center;
+}
+
+.about {
+  text-align: center;
+  margin-left: 30%;
+  margin-right: 30%;
+  color: white;
+}
+
+.quote-container {
+  display: flex;
+  margin: 10%;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.about h2 {
+  color: white;
+}
+
+.about p {
+  color: white;
+  font-weight: 200;
+}
+
+.quote {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.quote > p {
+  width: 80%;
+  font-weight: 400;
+  font-size: 24px;
+  color: rgb(61, 60, 60);
+}
+
+.quote-container > img {
+  border-radius: 50%;
+  max-width: 30%;
+  height: auto;
+}
+
+footer {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+footer p {
+  margin-top: 5%;
+  width: 100%;
+  background-color: #003b6f;
+  color: white;
+  text-align: center;
+}
