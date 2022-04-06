@@ -21,45 +21,49 @@ function submitted(event) {
 var form = document.querySelector("form");
 form.addEventListener("submit", function (e) {
   e.preventDefault();
-  // console.log("success!");
-
-  var firstName = document.querySelector("#fname");
-  var p1 = document.createElement("p");
-  p1.innerText = "First name: " + firstName.value;
 
   var email = document.querySelector("#email");
-  var p2 = document.createElement("p");
-  p2.innerText = "Email Address: " + email.value;
+  var emailEntered = email.value;
+  if (!emailEntered.includes("@")) {
+    alert("Please enter a valid email address");
+  } else {
+    var firstName = document.querySelector("#fname");
+    var p1 = document.createElement("p");
+    p1.innerText = "First name: " + firstName.value;
 
-  var cadence = document.querySelectorAll("input[type=radio]");
-  var selectedCadence = "";
-  for (x of cadence) {
-    if (x.checked) {
-      selectedCadence = x.value;
+    var p2 = document.createElement("p");
+    p2.innerText = "Email Address: " + email.value;
+
+    var cadence = document.querySelectorAll("input[type=radio]");
+    var selectedCadence = "";
+    for (x of cadence) {
+      if (x.checked) {
+        selectedCadence = x.value;
+      }
     }
-  }
-  var p3 = document.createElement("p");
-  p3.innerText = "Cadence: " + selectedCadence;
+    var p3 = document.createElement("p");
+    p3.innerText = "Cadence: " + selectedCadence;
 
-  var topics = document.querySelectorAll("input[type=checkbox]");
-  var selectedTopics = [];
-  for (y of topics) {
-    if (y.checked) {
-      selectedTopics.push(y.value);
+    var topics = document.querySelectorAll("input[type=checkbox]");
+    var selectedTopics = [];
+    for (y of topics) {
+      if (y.checked) {
+        selectedTopics.push(y.value);
+      }
     }
+
+    var p4 = document.createElement("p");
+    p4.innerText = "Selected topic(s): " + selectedTopics;
+
+    var favColors = document.querySelector("select");
+    var selectedFavColor = favColors.options[favColors.selectedIndex].value;
+    var p5 = document.createElement("p");
+    p5.innerText = "Favorite Color: " + selectedFavColor;
+
+    document.querySelector("footer").before(p1, p2, p3, p4, p5);
+
+    var confirmation = document.querySelector(".meta-form");
+    confirmation.innerText =
+      "Thank you for submitting this form. We have the following information on record:";
   }
-
-  var p4 = document.createElement("p");
-  p4.innerText = "Selected topic(s): " + selectedTopics;
-
-  var favColors = document.querySelector("select");
-  var selectedFavColor = favColors.options[favColors.selectedIndex].value;
-  var p5 = document.createElement("p");
-  p5.innerText = "Favorite Color: " + selectedFavColor;
-
-  document.querySelector("footer").before(p1, p2, p3, p4, p5);
-
-  var confirmation = document.querySelector(".meta-form");
-  confirmation.innerText =
-    "Thank you for submitting this form. We have the following information on record:";
 });
