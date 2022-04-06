@@ -41,7 +41,23 @@ form.addEventListener("submit", function (e) {
   var p3 = document.createElement("p");
   p3.innerText = "Cadence: " + selectedCadence;
 
-  document.querySelector("footer").before(p1, p2, p3);
+  var topics = document.querySelectorAll("input[type=checkbox]");
+  var selectedTopics = [];
+  for (y of topics) {
+    if (y.checked) {
+      selectedTopics.push(y.value);
+    }
+  }
+
+  var p4 = document.createElement("p");
+  p4.innerText = "Selected topic(s): " + selectedTopics;
+
+  var favColors = document.querySelector("select");
+  var selectedFavColor = favColors.options[favColors.selectedIndex].value;
+  var p5 = document.createElement("p");
+  p5.innerText = "Favorite Color: " + selectedFavColor;
+
+  document.querySelector("footer").before(p1, p2, p3, p4, p5);
 
   var confirmation = document.querySelector(".meta-form");
   confirmation.innerText =
