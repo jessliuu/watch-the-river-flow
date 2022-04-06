@@ -63,7 +63,7 @@ form.addEventListener("submit", function (e) {
     document.querySelector("footer").before(p1, p2, p3, p4, p5);
 
     var confirmation = document.querySelector(".meta-form");
-    confirmation.innerText =
+    confirmation.innerHTML =
       "Thank you for submitting this form. We have the following information on record:";
   }
 });
