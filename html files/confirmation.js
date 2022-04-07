@@ -28,8 +28,9 @@ form.addEventListener("submit", function (e) {
     alert("Please enter a valid email address");
   } else {
     var firstName = document.querySelector("#fname");
+    var firstNameEntered = firstName.value;
     var p1 = document.createElement("p");
-    p1.innerText = "First name: " + firstName.value;
+    p1.innerText = "First name: " + firstNameEntered;
 
     var p2 = document.createElement("p");
     p2.innerText = "Email Address: " + email.value;
