@@ -56,15 +56,16 @@ form.addEventListener("submit", function (e) {
     var p4 = document.createElement("p");
     p4.innerText = "Selected topic(s): " + selectedTopics;
 
-    var favColors = document.querySelector("select");
-    var selectedFavColor = favColors.options[favColors.selectedIndex].value;
+    var heardAboutUs = document.querySelector("select");
+    var selectedheardAboutUs =
+      heardAboutUs.options[heardAboutUs.selectedIndex].value;
     var p5 = document.createElement("p");
-    p5.innerText = "Favorite Color: " + selectedFavColor;
+    p5.innerText = "How you heard about us: " + selectedheardAboutUs;
 
     document.querySelector("footer").before(p1, p2, p3, p4, p5);
 
     var confirmation = document.querySelector(".meta-form");
     confirmation.innerHTML =
-      "Thank you for submitting this form. We have recorded the following information:";
+      "Thank you for submitting this form. Unfortunately, due to server issues, we are unable to recorded the following information:";
   }
 });

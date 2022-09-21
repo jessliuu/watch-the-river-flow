@@ -15,6 +15,10 @@ nav {
   font-weight: 600;
 }
 
+nav img {
+  border-radius: 50%;
+  max-width: 120px;
+}
 nav :nth-child(2) {
   align-self: center;
   display: flex;
@@ -31,7 +35,6 @@ a:hover {
 .about-container {
   width: 100%;
   background-image: url(../images/pexels-baskin-creative-studios-1766838.jpg);
-  opacity: 80%;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -42,8 +45,8 @@ a:hover {
 
 .about {
   text-align: center;
-  margin-left: 30%;
-  margin-right: 30%;
+
+  margin-left: 25%;
   color: white;
 }
 
@@ -55,12 +58,27 @@ a:hover {
 }
 
 .about h2 {
+  font-size: 5vw;
   color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-.about p {
-  color: white;
-  font-weight: 200;
+button {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #ffffff;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 300;
+  color: #000000;
+  text-align: center;
+  transition: all 0.2s;
+}
+button:hover {
+  color: grey;
+  background-color: #ffffff;
 }
 
 .quote {
